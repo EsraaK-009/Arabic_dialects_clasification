@@ -1,6 +1,6 @@
 # Arabic Dialects Clasification
 
-Different models to classify Arabic dialects
+Using Machine and Deep learning models to classify what dialect a tweet in Arabic belong.
 
 ## Contents:
 
