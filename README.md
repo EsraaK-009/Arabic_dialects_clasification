@@ -1,6 +1,6 @@
-# Arabic Dialects Clasification
+# Arabic Dialects Classification
 
-Using Machine and Deep learning models to classify what dialect a tweet in Arabic belong.
+Using Machine and Deep learning models to classify what dialect a tweet in Arabic belongs to.
 
 ## Contents:
 
@@ -14,10 +14,10 @@ Using Machine and Deep learning models to classify what dialect a tweet in Arabi
 
 - Clone repo.
 - Download these [models](https://drive.google.com/drive/folders/1uyYJtOykQLhi_eLtKzjwJwPhHJM0aB3Z?usp=sharing) and copy them to ./models/
-- Create a venv (Recommended, I'll add how at the end)
-- install requirments. 
+- Create a venv (Recommended)
+- install requirements. 
 ```bash
-pip3 install -r requirments.txt
+pip3 install -r requirements.txt
 ```
 - Run app.py
 ```bash
@@ -28,18 +28,18 @@ python3 app.py
 
 ### Local Deployment
 
-In this repo I have two models till now, can be accessed by two different POST functions.
+In this repo I have two models that can be accessed by two different POST functions.
 
 - Machine Learning model can be accessed by: yourlocalhost/ml
 - Deep Learning model can be accessed by: yourlocalhost/dl
-- Both take json in the body of the POST request for example: {"text": "مثال من تويتر"} and return a string.
+- Both take JSON in the body of the POST request for example: {"text": "مثال من تويتر"} and return a string.
 - example using Postman:
 
 ![](./postman.png)
 
 ### Results
 
-It's clear that Arabic dialects are similar and even Arabs can get confused between them if written. Models also gets confused.  
+It's clear that Arabic dialects are similar and even Arabs can get confused between them if written. Models also get confused.  
 I see that if we combine some close dialects together and have classes less than 18, we'll get much better results.
 
 
@@ -63,12 +63,16 @@ I'll talk about some notebooks not all of them but all of them are commented.
 
 **Training Models:**
 
-- Choosed f1_score macro as a metric to give every class the same importance.
+- Chose f1_score macro as a metric to give every class the same importance.
 
 
 ### Future Updates
 
 - Work on the FineTune notebook.
 - Make a more reliable API.
-- Working on making new features not the text only, for example: if someone mentioned name of a country in tweet.
+- Working on making new features not the text only, for example: if someone mentioned the name of a country in a tweet.
+
+
+
+
 

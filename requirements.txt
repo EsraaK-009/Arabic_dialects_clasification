@@ -5,3 +5,4 @@ flask
 emoji
 tensorflow
 imblearn
+scikit-learn==1.0.1
